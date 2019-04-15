@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/visor_pacial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/visor_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/visor_pacial"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/num7"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/num8"
+        android:layout_alignBottom="@+id/num8"
+        android:layout_alignParentStart="true"
+        android:onClick="acao"
+        android:text="7"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/num4"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/num5"
+        android:layout_alignBottom="@+id/num5"
+        android:layout_alignParentStart="true"
+        android:onClick="acao"
+        android:text="4"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/num1"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/num4"
+        android:onClick="acao"
+        android:text="1"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/ponto"
+        android:layout_width="75dp"
+        android:layout_height="match_parent"
+        android:layout_above="@id/enviar"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/num1"
+        android:onClick="acao"
+        android:text="."
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/maismenos"
+        android:layout_alignBottom="@+id/maismenos"
+        android:layout_alignParentStart="true"
+        android:onClick="enviar"
+        android:text="Enviar" />
+
+    <Button
+        android:id="@+id/num8"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/visor_resultado"
+        android:layout_toRightOf="@id/num7"
+        android:onClick="acao"
+        android:text="8"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/num5"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/num7"
+        android:layout_toRightOf="@id/num4"
+        android:onClick="acao"
+        android:text="5"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/num2"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/num1"
+        android:layout_alignBottom="@+id/num1"
+        android:layout_toEndOf="@+id/num4"
+        android:onClick="acao"
+        android:text="2"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/num0"
+        android:layout_width="75dp"
+        android:layout_height="match_parent"
+        android:layout_above="@id/enviar"
+        android:layout_below="@id/num2"
+        android:layout_toRightOf="@id/ponto"
+        android:onClick="acao"
+        android:text="0"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/num9"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/num8"
+        android:layout_alignBottom="@+id/num8"
+        android:layout_toEndOf="@+id/num8"
+        android:onClick="acao"
+        android:text="9"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/num6"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/num5"
+        android:layout_alignBottom="@+id/num5"
+        android:layout_toEndOf="@+id/num8"
+        android:onClick="acao"
+        android:text="6"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/num3"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/num6"
+        android:layout_toRightOf="@id/num2"
+        android:onClick="acao"
+        android:text="3"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/mais"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/num9"
+        android:layout_alignBottom="@+id/num9"
+        android:layout_toEndOf="@+id/num9"
+        android:height="10dp"
+        android:onClick="acao1"
+        android:text="+"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/menos"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/num6"
+        android:layout_alignBottom="@+id/num6"
+        android:layout_toEndOf="@+id/num9"
+        android:onClick="acao1"
+        android:text="-"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/vezes"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/num3"
+        android:layout_alignBottom="@+id/num3"
+        android:layout_toEndOf="@+id/num6"
+        android:onClick="acao1"
+        android:text="*"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/porcentagem"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/mais"
+        android:layout_alignBottom="@+id/mais"
+        android:layout_toEndOf="@+id/mais"
+        android:onClick="acao1"
+        android:text="%"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/potencia"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_alignBaseline="@+id/menos"
+        android:layout_alignBottom="@+id/menos"
+        android:layout_toEndOf="@+id/mais"
+        android:onClick="acao1"
+        android:text="x^"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/fatorial"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/potencia"
+        android:layout_toRightOf="@id/vezes"
+        android:onClick="acao1"
+        android:text="x!"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/dividir"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/seno"
+        android:layout_alignBottom="@+id/seno"
+        android:layout_toEndOf="@+id/igual"
+        android:onClick="acao1"
+        android:text="÷"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/igual"
+        android:layout_width="75dp"
+        android:layout_height="match_parent"
+        android:layout_above="@id/maismenos"
+        android:layout_below="@id/num3"
+        android:layout_toRightOf="@id/num0"
+        android:onClick="acao"
+        android:text="="
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/cosseno"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_alignBaseline="@+id/tangente"
+        android:layout_alignBottom="@+id/tangente"
+        android:layout_toEndOf="@+id/igual"
+        android:onClick="acao1"
+        android:text="COS"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/clearall"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/cosseno"
+        android:layout_toRightOf="@id/igual"
+        android:onClick="limpar"
+        android:text="C"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/maismenos"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/cosseno"
+        android:layout_toLeftOf="@id/clearall"
+        android:onClick="acao1"
+        android:text="+/-"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/seno"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/fatorial"
+        android:layout_toRightOf="@id/dividir"
+        android:onClick="acao1"
+        android:text="SIN"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/tangente"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/seno"
+        android:layout_toRightOf="@id/cosseno"
+        android:onClick="acao1"
+        android:text="TAN"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/raiz"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_alignBaseline="@+id/clearall"
+        android:layout_alignBottom="@+id/clearall"
+        android:layout_toEndOf="@+id/cosseno"
+        android:onClick="acao1"
+        android:text="v"
+        android:textSize="18dp" />
+
+
+
+
+
+</RelativeLayout>
